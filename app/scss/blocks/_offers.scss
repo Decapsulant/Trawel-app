@@ -1,0 +1,177 @@
+.offers {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 0 0;
+    gap: 30px;
+}
+.offers__item {
+    max-width: 570px;
+}
+.offers__img {
+    display: block;
+    border-radius: 15px;
+    flex: 0 1 328px;
+}
+.offer__link{
+    position: relative;
+    display: block;
+}
+.offers__offer {
+    justify-content: space-between;
+    position: absolute;
+    max-width: 520px;
+    width: 100%;
+    height: 70px;
+    bottom: 15px;
+    left:15px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 16px;
+}
+.offers__offer-city {
+    min-width: 33.333%;
+}
+.offers__offer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    margin-bottom: 4px;
+}
+.offers__offer-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+}
+.offers__offer-data {
+    padding-left:15px;
+    border-left:1px solid #999;
+    min-width: 33.333%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+}
+.offers__offer-price {
+    padding-left:15px;
+    border-left:1px solid #999;
+    
+}
+.offers__title {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+    margin-bottom: 15px;
+}
+.offers__btns{
+    display: flex;
+    gap: 20px;
+}
+.offers__text {
+    max-width: 570px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+    margin-bottom: 40px;
+}
+.offers__btn {
+    display:block;
+    color: $red;
+    padding: 15px;
+    max-width: 250px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    border: 2px solid $red;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    transition:all .3s linear;
+
+    &:hover{
+        background-color: $red;
+        color: #fff;
+    }
+
+
+}
+@media(max-width:1150px){
+    .offers__offer{
+        max-width: 450px;
+        left: 5%;
+    }
+}
+@media(max-width:1030px){
+    .offers__offer{
+        max-width: 350px;
+        left: 11%;
+    }
+    .offers__offer-city{
+        min-width: 100px;
+    }
+
+    @media(max-width:900px){
+        .offers__offer{
+            left:7%;
+            height: 60px;
+        }
+    }
+    @media(max-width:850px){
+        .offers__offer{
+            max-width:90%;
+            left:4%;
+        }
+        .offers__offer-data{
+            display: none;
+        }
+    }
+
+}
+
+@media(max-width:768px){
+    .offers{
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .offers__offer{
+        bottom: 15px;
+        height: 60px;
+        padding: 10px 10px 30px 0;
+    }
+    .offer__item{
+        max-width: 100%;
+        width: 100%;
+    }
+    .offers__btns{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .offers__btn{
+        max-width: 100%;
+        width: 100%;
+    }
+    .offers__offer-price{
+        text-align: center;
+        width: 50%;
+        height: 100%;
+    }
+    .offers__offer-name{
+        text-align: center;
+        font-size: 10px;
+    }
+    .offers__offer-city{
+        text-align: center;
+        padding:0 0 0 15px;
+    }
+}
+

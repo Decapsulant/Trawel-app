@@ -1,0 +1,129 @@
+
+
+.reviews__slider {
+    padding: 60px 0 50px 0;
+    position: relative;
+}
+.reviews__item {
+}
+.reviews__img {
+    max-width: 100%;
+    & img{
+        margin: 0 auto 20px;
+    }
+}
+.reviews__comment {
+    max-width: 317px;
+    margin: 0 auto 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.reviews__name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    font-style: italic;
+    max-width: 320px;
+    margin: 0 auto;
+    
+}
+.reviews__job{
+    font-weight: 400;
+}
+.reviews__btn {
+    
+    display: block;
+    margin: 0 auto;
+    width: 275px;
+    padding: 15px 82px;
+    color: #fff;
+    background-color: $red;
+    text-align: center;
+    border-radius: 10px;
+
+    transition:all .2s linear;
+
+    &:hover{
+        background-color: $black;
+        color: $red;
+    }
+}
+
+
+.slick-next{
+
+    background-color: $red;
+    font-size:0;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    right: -2%;
+
+    transition: all .2s linear;
+
+    &:hover{
+        background-color: $black;
+    }
+
+    &:after{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        display: block;
+        content: '';
+        border-top: 2px solid #fff;
+        border-left:2px solid #fff;
+        width: 16px;
+        height: 16px;
+
+        transform: rotate(135deg);
+    }
+}
+.slick-prev{
+    background-color: $red;
+    font-size:0;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    z-index: 10;
+
+    transition: all .2s linear;
+
+    &:hover{
+        background-color: $black;
+    }
+
+    &:after{
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        display: block;
+        content: '';
+        border-top: 2px solid #fff;
+        border-left:2px solid #fff;
+        width: 16px;
+        height: 16px;
+
+        transform: rotate(315deg);
+    }
+}
+.slick-disabled{
+    background-color: grey;
+
+    &:hover{
+        background-color: grey;
+    }
+}
