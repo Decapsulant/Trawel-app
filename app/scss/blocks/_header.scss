@@ -204,10 +204,12 @@ gap: 30px;
 
 .header__currency {
     padding: 0;
+    border-bottom: 2px dotted $red;
 }
 .header__symbols {
     display:flex;
     gap: 50px;
+    
 
     
     
